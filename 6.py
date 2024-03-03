@@ -1,8 +1,8 @@
-def get_column_sum(matrix, column_index):
-    column_sum = 0
-    for row in matrix:
-        column_sum += row[column_index]
-    return column_sum
+def get_row_average(matrix, row_index):
+    row = matrix[row_index]
+    row_sum = sum(row)
+    row_average = row_sum / len(row)
+    return row_average
 
 
 
